@@ -1,0 +1,12 @@
+The year is 2012 and your programming challenge skills have landed you a job at Microsoft on the Powerpoint team. Some people think that a Powerpoint presentation should have a lot of text on each slide, and it is your job to help them. You need to build an Autofit feature that will take the dimensions of a slide and a string of text, and will output the largest font size that will fit that text in the slide.
+
+For any given font size n, assume that each character is n pixels tall. However, different characters can have different widths. Each character is assigned a multiplier, which when mulitplied with the font size gives its width in pixels (round down if it is not an even number). For example, if a has a multiplier of 1.1, it will be 11 pixels wide when the font size is 10 (1.1 * 10 = 11) and 13 pixels wide when the font size is 12 (1.1 * 12 = 13.2). You can assume the smallest possible font is 1, and the largest is the height of the slide. If the text cannot fit on the slide at all, print 0.
+
+
+INPUT:
+The input will start by giving the weights of all the characters. For simplicity, only lower case letters will be used. The following lines will consist of the height and width of a slide, followed by the text that must be fitted to it.
+
+
+OUTPUT:
+Your output should be the largest font size for each input string (or 0), separated by new lines.
+
